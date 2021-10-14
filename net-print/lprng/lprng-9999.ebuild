@@ -15,6 +15,11 @@ IUSE="ssl"
 RDEPEND="app-shells/bash"
 DEPEND="dev-libs/openssl"
 
+src_prepare() {
+	default
+	eautoreconf
+}
+
 src_configure() {
 	./configure --prefix=/usr --sysconfdir=/etc/lprng --localstatedir=/var\
 	--mandir=/usr/share/man --libexecdir=/usr/lib/lprng\
