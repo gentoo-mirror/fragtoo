@@ -22,10 +22,10 @@ DEPEND="${RDEPEND}"
 
 src_unpack() {
 	unpack "${A}"
-	mv UrbanTerror* urbanterror-bin-9999
+	mv UrbanTerror43 urbanterror-bin-9999
 }
 
 src_install() {
-	cp -r urbanterror* /opt/urbanterror
-	ln -s /opt/urbanterror/Quake3-UrT.$(arch) /usr/bin/urbanterror
+	cp -r urbanterror-bin-9999 /opt/urbanterror
+	ln /opt/urbanterror/Quake3-UrT.$(arch) /usr/bin/urbanterror
 }
