@@ -26,6 +26,6 @@ src_unpack() {
 }
 
 src_install() {
-	cp -r urbanterror-bin-9999 /opt/urbanterror
+	cp -r ./ /opt/urbanterror
 	ln /opt/urbanterror/Quake3-UrT.$(arch) /usr/bin/urbanterror
 }
