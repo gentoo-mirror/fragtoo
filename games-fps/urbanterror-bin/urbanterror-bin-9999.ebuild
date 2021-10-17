@@ -26,6 +26,7 @@ src_unpack() {
 }
 
 src_install() {
-	cp -r ./ /opt/urbanterror
-	ln /opt/urbanterror/Quake3-UrT.$(arch) /usr/bin/urbanterror
+	insinto /opt/urbanterror
+	doins -r ./.
+	dosym /opt/urbanterror/Quake3-UrT.$(arch) /usr/bin/urbanterror
 }
