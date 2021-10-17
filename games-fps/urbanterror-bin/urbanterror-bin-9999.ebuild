@@ -28,5 +28,6 @@ src_unpack() {
 src_install() {
 	insinto /opt/urbanterror
 	doins -r ./.
+	fperms +x /opt/urbanterror/Quake3-UrT.$(arch)
 	dosym /opt/urbanterror/Quake3-UrT.$(arch) /usr/bin/urbanterror
 }
