@@ -9,6 +9,7 @@ SRC_URI="http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror434_full.zi
 
 LICENSE="GPL-2"
 SLOT="0"
+KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	media-libs/libsdl
