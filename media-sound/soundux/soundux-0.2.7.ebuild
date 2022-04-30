@@ -11,7 +11,7 @@ SRC_URI="https://github.com/Soundux/Soundux/releases/download/${PV}/soundux-${PV
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="pipewire"
 
 DEPEND="dev-libs/libappindicator:3
