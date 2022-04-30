@@ -39,7 +39,8 @@ src_compile() {
 src_install() {
 	cd ${S}/build
 	DESTDIR="${D}" ninja install
-	ln -sf /opt/soundux/soundux "${D}/usr/bin/soundux"
+	mkdir -p "${D}/usr/bin"
+	ln -sf "${D}/opt/soundux/soundux" "${D}/usr/bin/soundux"
 }
 
 pkg_postinst() {
