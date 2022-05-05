@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=media-libs/libsdl net-misc/curl sys-libs/zlib virtual/jpeg:0
+DESCRIPTION=Hollywood tactical shooter based on the ioquake3 engine
+EAPI=7
+HOMEPAGE=https://urbanterror.info
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libsdl net-misc/curl sys-libs/zlib virtual/jpeg:0
+SLOT=0
+SRC_URI=http://cdn.urbanterror.info/urt/43/releases/zips/UrbanTerror434_full.zip
+_md5_=38cd7e2f0a26e09a04366d497b7b9914

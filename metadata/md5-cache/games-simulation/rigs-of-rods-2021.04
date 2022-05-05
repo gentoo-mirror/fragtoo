@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=>=dev-games/mygui-3.2.2 >=dev-games/ogre-1.8 =dev-games/ois-1.3 angelscript? ( >=dev-libs/angelscript-2.31.2 ) >=dev-libs/boost-1.50 dev-libs/openssl >=dev-libs/rapidjson-1.1.0 >=dev-util/cmake-2.8 >=gui-libs/gtk-2.0 media-libs/openal net-misc/curl >=sys-devel/gcc-4.8
+DESCRIPTION=The Free & Open Source Vehicle Simulator
+EAPI=6
+HOMEPAGE=https://www.rigsofrods.org/
+IUSE=+angelscript
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-games/mygui-3.2.2 >=dev-games/ogre-1.8 =dev-games/ois-1.3 angelscript? ( >=dev-libs/angelscript-2.31.2 ) >=dev-libs/boost-1.50 dev-libs/openssl >=dev-libs/rapidjson-1.1.0 >=dev-util/cmake-2.8 >=gui-libs/gtk-2.0 media-libs/openal net-misc/curl >=sys-devel/gcc-4.8
+SLOT=0
+SRC_URI=https://github.com/RigsOfRods/rigs-of-rods/archive/refs/tags/2021.04.tar.gz
+_md5_=b56c45f053b1fe8d000640cde044dd6a
