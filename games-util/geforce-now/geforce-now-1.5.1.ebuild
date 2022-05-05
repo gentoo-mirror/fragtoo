@@ -27,6 +27,6 @@ src_install() {
 	doins ${S}/*
 	insinto /usr/share/applications
 	doins ${S}/com.github.hmlendea.geforcenow-electron.desktop /usr/share/applications/
-	fperms +x /opt/${PN}
+	fperms +x /opt/${PN}/geforcenow-electron
 	dosym -r /opt/${PN}/geforcenow-electron /usr/bin/geforcenow-electron
 }
