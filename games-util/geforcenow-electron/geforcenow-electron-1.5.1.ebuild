@@ -24,7 +24,7 @@ src_unpack() {
 
 src_install() {
 	insinto /opt/${PN}
-	doins ${S}/*
+	doins -r ${S}/*
 	insinto /usr/share/applications
 	doins ${S}/com.github.hmlendea.geforcenow-electron.desktop /usr/share/applications/
 	fperms +x /opt/${PN}/geforcenow-electron
