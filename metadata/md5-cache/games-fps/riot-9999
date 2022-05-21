@@ -1,9 +1,0 @@
-DEFINED_PHASES=compile install
-DESCRIPTION=Riot is a free multiplayer first-person shooter based on Godot Engine
-EAPI=7
-HOMEPAGE=https://riot.mersh.com/ https://git.mersh.com/riot/riot/
-KEYWORDS=~amd64 ~x86
-LICENSE=GPL-3
-SLOT=0
-SRC_URI=https://git.mersh.com/riot/riot/archive/master.tar.gz
-_md5_=0db1d9918e0bc6b257b77f1fcbb86c91
