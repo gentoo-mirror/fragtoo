@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit xdg
+inherit xdg optfeature
 
 DESCRIPTION="A Wine+Roblox management application"
 HOMEPAGE="https://gitlab.com/brinkervii/grapejuice.git"
@@ -55,7 +55,14 @@ src_install() {
 	default
 }
 
-pkg_postinst() {
+xdg_pkg_postinst() {
+	xdg_desktop_database_update
+	xdg_mimeinfo_database_update
 	optfeature "Wine is required to run Roblox, but left out of depends to let the user decide on custom builds" app-emulation/wine
 	optfeature "Required for PRIME systems running XOrg, where XRandR based profiling is desired" x11-apps/xrandr
+}
+
+xdg_pkg_postrm() {
+	xdg_desktop_database_update
+	xdg_mimeinfo_database_update
 }
